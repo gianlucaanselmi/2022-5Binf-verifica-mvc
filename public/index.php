@@ -50,3 +50,4 @@ $router->add('users2', ['controller' => 'Home', 'action' => 'usersJs']);
 $router->add('{controller}/{action}');
     
 $router->dispatch($_SERVER['QUERY_STRING']);
+
