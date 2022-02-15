@@ -9,16 +9,16 @@ drop table if exists crews;
 create table crews (
     name varchar(100),
     members int,
-    crew_id int AUTO_INCREMENT PRIMARY KEY
+    crew_id int AUTO_INCREMENT PRIMARY KEY,
     foreign key (members) references pirates(pirate_id)
 );
 
-insert into pirates(name,surname) values ("Monkey D. Rufy","17");
-insert into pirates(name,surname) values ("Nami","18");
-insert into pirates(name,surname) values ("Roronoa Zoro","19");
+insert into pirates(name,age) values ("Monkey D. Rufy","17");
+insert into pirates(name,age) values ("Nami","18");
+insert into pirates(name,age) values ("Roronoa Zoro","19");
 
-insert into pirates(name,surname) values ("Trafalgar D. Water Law","24");
-insert into pirates(name,surname) values ("Bepo","20");
+insert into pirates(name,age) values ("Trafalgar D. Water Law","24");
+insert into pirates(name,age) values ("Bepo","20");
 
 
 insert into crews(name,members) values ("Cappello di Paglia",1);
